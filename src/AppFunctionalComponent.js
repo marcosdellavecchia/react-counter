@@ -7,15 +7,27 @@ function AppFunction() {
   const incrementar = () => {
     setContador(contador + 1);
   };
+  const disminuir = () => {
+    setContador(contador - 1);
+  };
   const reset = () => {
     setContador(0);
   };
   return (
     <div className="App">
       <header className="App-header">
+        <h1>React Hooks: useState</h1>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>{contador}</p>
+        <p
+          style={{
+            color: contador > 0 ? "green" : contador < 0 ? "red" : "white",
+          }}
+        >
+          {contador}
+        </p>
         <button onClick={incrementar}>Incrementar</button>
+        <br />
+        <button onClick={disminuir}>Disminuir</button>
         <br />
         <button onClick={reset}>Reset</button>
       </header>
