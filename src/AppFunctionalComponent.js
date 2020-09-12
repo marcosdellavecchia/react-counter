@@ -26,3 +26,5 @@ function AppFunction() {
 export default AppFunction;
 
 // Se utiliza el hook useState, que simula el metodo setState para actualizar el estado del componente.
+// useSetate devuelve un par: el valor del estado actual (contador) y una función que permite actualizarlo (setContador).
+// Este es un ejemplo claro y sencillo de cómo utilizar React sin clases haciéndonos valer de los hooks.
